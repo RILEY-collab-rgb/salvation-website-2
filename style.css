@@ -1,289 +1,451 @@
-// Language translations (Bible verses stay in English)
-const translations = {
-  en: {
-    // sidebar
-    "sidebar.intro": "Introduction",
-    "sidebar.step1": "Step 1 – Admit, Penalty & Jesus Paid",
-    "sidebar.step2": "Step 2 – Believe What Jesus Did",
-    "sidebar.step3": "Step 3 – Accept and Confess",
-    "sidebar.assurance": "Assurance of Salvation",
-    "sidebar.prayer": "Prayer",
-    "sidebar.questions": "Common Questions",
-    "sidebar.nextsteps": "Next Steps",
-
-    // hero
-    "hero.title": "How Can a Person Be Saved?",
-    "hero.text1": "Have you ever wondered what the Bible says about salvation?",
-    "hero.text2": "Many people believe different things about how someone can be saved. Some believe that being a good person is enough. Others believe that joining a church or doing good works will earn eternal life.",
-    "hero.text3": "But what does the Bible actually say?",
-    "hero.text4": "This guide will walk you through what the Bible teaches about salvation in a clear and simple way. Each step will show Bible verses and explanations so you can understand how a person can receive eternal life through Jesus Christ.",
-    "hero.button": "Start the Salvation Guide",
-
-    // intro
-    "intro.title": "Introduction",
-    "intro.p1": "“You may or may not know me, but I want to share something very important with you right now.”",
-    "intro.p2": "This is about salvation—about how we can go to heaven.",
-    "intro.p3": "This is not about religion. Going to heaven is not based on religion, good works, or church membership.",
-    "intro.p4": "The Father is in heaven. The Bible clearly says that no one can go to heaven except through Jesus Christ alone.",
-    "intro.p5": "What I will share with you is not from my own opinion. These steps are already given by God through His Word, the Bible. Everything here is based on the Bible.",
-    "intro.p6": "Let us now look at what the Bible says step by step.",
-
-    // step1
-    "step1.title": "Step 1 – Admit That We Are Sinners",
-    "step1.q": "Do you believe that all of us are sinners?",
-    "step1.explanation": "The Bible clearly says that all of us have sinned. No one is exempt.",
-    "step1.illustration": "Even pastors, priests, and whatever background or status we have—we are all sinners.\nThe simplest example is lying. Surely, everyone has lied at some point.",
-    "step1.consequence": "Because of this, we must understand something very important: our sins have consequences.",
-    "step1.penaltyTitle": "THE PENALTY OF SIN",
-    "step1.penalty1": "The Bible says that the penalty of sin is death.",
-    "step1.penalty2": "The first death is physical death. This is when the soul separates from the body.",
-    "step1.penalty3": "But this is not the main death being talked about.",
-    "step1.penalty4": "There is no “big” or “small” sin before God. Liars and murderers receive the same punishment.",
-    "step1.penalty5": "The punishment is the lake of fire. This is hell.",
-    "step1.penalty6": "The second death is hell, and this is the penalty for our sins.",
-    "step1.penaltyIllus": "First Death → Physical Death\n↓\nJudgment before God (Hebrews 9:27)\n↓\nIf there is no relationship with God → Second Death (Hell)",
-    "step1.penalty7": "Because we are all sinners, we are all heading to hell… but—",
-    "step1.jesusTitle": "JESUS PAID THE PRICE",
-    "step1.jesus1": "Even though we are sinners, God loves us.",
-    "step1.jesus2": "Because of His love, Jesus paid the price.",
-    "step1.jesus3": "He suffered and was crucified. He died in our place so that we would not have to go to hell.",
-    "step1.jesus4": "God already did His part.",
-    "step1.jesus5": "Now the choice is yours.",
-
-    // step2
-    "step2.title": "Step 2 – Believe What Jesus Did",
-    "step2.text": "You must believe what Jesus did on the cross.",
-    "step2.illustration": "Imagine you are riding a bus, and someone tells you that your fare is already paid.\nYou still have a choice.\nIf you do not believe him, you will still pay for yourself.\nBut if you believe him, then your fare is already paid.",
-    "step2.text2": "It is the same with what Jesus did.",
-    "step2.text3": "He already paid for our sins, but it is your choice if you will believe it or not.",
-    "step2.text4": "God gave us free will. The decision is yours.",
-    "step2.text5": "Now, let us go to the last step.",
-
-    // step3
-    "step3.title": "Step 3 – Accept Him and Confess",
-    "step3.q": "Are you willing to accept Jesus Christ as your Savior?",
-    "step3.text": "Now that what He did is clear to you, it is time to decide.",
-    "step3.yes": "Yes",
-    "step3.no": "No",
-    "step3.ifYes": "If Yes: We will now proceed to prayer.",
-    "step3.prayerNote": "In this prayer, you will ask for forgiveness for your sins and accept Him as your Savior sincerely in your heart. When praying, do not do anything else. Just focus and mean every word.",
-
-    // prayer
-    "prayer.title": "A Simple Prayer of Faith",
-    "prayer.text": "<strong>Dear Lord Jesus,</strong> I know that I am a sinner and that I deserve the penalty of hell. But I believe that You died on the cross, were buried, and rose again for my sins. Please forgive me for all my sins. Right now I place my trust in You alone as my personal Savior. Thank You for saving my soul and giving me eternal life. Amen.",
-
-    // assurance
-    "assurance.title": "Assurance of Salvation",
-    "assurance.text1": "Because you accepted Him, you are now a child of God.",
-    "assurance.text2": "You now have a relationship with Him.",
-    "assurance.text3": "If you leave this world, you will go to His home, which is heaven.",
-    "assurance.text4": "This means your salvation is secure. It cannot be taken away.",
-    "assurance.sinTitle": "WHAT IF I SIN AGAIN?",
-    "assurance.sinIllus": "Think about your relationship with your parents.\nWhen you make a mistake, does your relationship end? Are you no longer their child?\nOf course not. You are still their child. That relationship cannot be removed.\n\nIt is the same with God. Once you are His child, that relationship will not disappear.\nBut when we do something wrong, our parents discipline us so we will not continue in that mistake.\nIt is the same with God. He disciplines us because He loves us and wants us to do what is right.",
-    "assurance.sinText": "You are still going to heaven, but God will guide and correct you.",
-    "assurance.finalTitle": "FINAL MESSAGE",
-    "assurance.finalText": "Hopefully, you now clearly understand salvation.",
-    "assurance.finalText2": "Please share this with your family and friends so they can also know God’s love.",
-
-    // questions (only 2 now)
-    "questions.title": "Common Questions",
-    "questions.q1.ask": "Is being a good person enough to be saved?",
-    "questions.q1.ans": "<div class=\"verse-card\" style=\"margin:0 0 0.5rem 0;\"><span class=\"verse-ref\">Ephesians 2:8-9 (KJV)</span> For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.</div> Salvation is a gift from God, not earned by good works.",
-    "questions.q2.ask": "Do I need to join a church to be saved?",
-    "questions.q2.ans": "<div class=\"verse-card\" style=\"margin:0 0 0.5rem 0;\"><span class=\"verse-ref\">Acts 4:12 (KJV)</span> Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.</div> Salvation is through Jesus alone, not church membership.",
-
-    // next steps
-    "nextsteps.title": "What Should I Do Next?",
-    "nextsteps.text": "If you have trusted Christ as your Savior, here are some important next steps for your spiritual growth:",
-    "nextsteps.bullet1": "Read the Bible daily.",
-    "nextsteps.bullet2": "Pray regularly and talk to God.",
-    "nextsteps.bullet3": "Attend a Bible-believing church.",
-    "nextsteps.bullet4": "Follow the Lord in baptism.",
-    "nextsteps.bullet5": "Continue growing in your faith.",
-
-    // footer
-    "footer.text": "This website shares the Bible's message of salvation through Jesus Christ. All Scripture quotations are from the King James Version (KJV) of the Bible."
-  },
-  tl: {
-    // Tagalog (same English text for now)
-    "sidebar.intro": "Introduction",
-    "sidebar.step1": "Step 1 – Admit, Penalty & Jesus Paid",
-    "sidebar.step2": "Step 2 – Believe What Jesus Did",
-    "sidebar.step3": "Step 3 – Accept and Confess",
-    "sidebar.assurance": "Assurance of Salvation",
-    "sidebar.prayer": "Prayer",
-    "sidebar.questions": "Common Questions",
-    "sidebar.nextsteps": "Next Steps",
-    "hero.title": "How Can a Person Be Saved?",
-    "hero.text1": "Have you ever wondered what the Bible says about salvation?",
-    "hero.text2": "Many people believe different things about how someone can be saved. Some believe that being a good person is enough. Others believe that joining a church or doing good works will earn eternal life.",
-    "hero.text3": "But what does the Bible actually say?",
-    "hero.text4": "This guide will walk you through what the Bible teaches about salvation in a clear and simple way. Each step will show Bible verses and explanations so you can understand how a person can receive eternal life through Jesus Christ.",
-    "hero.button": "Start the Salvation Guide",
-    "intro.title": "Introduction",
-    "intro.p1": "“You may or may not know me, but I want to share something very important with you right now.”",
-    "intro.p2": "This is about salvation—about how we can go to heaven.",
-    "intro.p3": "This is not about religion. Going to heaven is not based on religion, good works, or church membership.",
-    "intro.p4": "The Father is in heaven. The Bible clearly says that no one can go to heaven except through Jesus Christ alone.",
-    "intro.p5": "What I will share with you is not from my own opinion. These steps are already given by God through His Word, the Bible. Everything here is based on the Bible.",
-    "intro.p6": "Let us now look at what the Bible says step by step.",
-    "step1.title": "Step 1 – Admit That We Are Sinners",
-    "step1.q": "Do you believe that all of us are sinners?",
-    "step1.explanation": "The Bible clearly says that all of us have sinned. No one is exempt.",
-    "step1.illustration": "Even pastors, priests, and whatever background or status we have—we are all sinners.\nThe simplest example is lying. Surely, everyone has lied at some point.",
-    "step1.consequence": "Because of this, we must understand something very important: our sins have consequences.",
-    "step1.penaltyTitle": "THE PENALTY OF SIN",
-    "step1.penalty1": "The Bible says that the penalty of sin is death.",
-    "step1.penalty2": "The first death is physical death. This is when the soul separates from the body.",
-    "step1.penalty3": "But this is not the main death being talked about.",
-    "step1.penalty4": "There is no “big” or “small” sin before God. Liars and murderers receive the same punishment.",
-    "step1.penalty5": "The punishment is the lake of fire. This is hell.",
-    "step1.penalty6": "The second death is hell, and this is the penalty for our sins.",
-    "step1.penaltyIllus": "First Death → Physical Death\n↓\nJudgment before God (Hebrews 9:27)\n↓\nIf there is no relationship with God → Second Death (Hell)",
-    "step1.penalty7": "Because we are all sinners, we are all heading to hell… but—",
-    "step1.jesusTitle": "JESUS PAID THE PRICE",
-    "step1.jesus1": "Even though we are sinners, God loves us.",
-    "step1.jesus2": "Because of His love, Jesus paid the price.",
-    "step1.jesus3": "He suffered and was crucified. He died in our place so that we would not have to go to hell.",
-    "step1.jesus4": "God already did His part.",
-    "step1.jesus5": "Now the choice is yours.",
-    "step2.title": "Step 2 – Believe What Jesus Did",
-    "step2.text": "You must believe what Jesus did on the cross.",
-    "step2.illustration": "Imagine you are riding a bus, and someone tells you that your fare is already paid.\nYou still have a choice.\nIf you do not believe him, you will still pay for yourself.\nBut if you believe him, then your fare is already paid.",
-    "step2.text2": "It is the same with what Jesus did.",
-    "step2.text3": "He already paid for our sins, but it is your choice if you will believe it or not.",
-    "step2.text4": "God gave us free will. The decision is yours.",
-    "step2.text5": "Now, let us go to the last step.",
-    "step3.title": "Step 3 – Accept Him and Confess",
-    "step3.q": "Are you willing to accept Jesus Christ as your Savior?",
-    "step3.text": "Now that what He did is clear to you, it is time to decide.",
-    "step3.yes": "Yes",
-    "step3.no": "No",
-    "step3.ifYes": "If Yes: We will now proceed to prayer.",
-    "step3.prayerNote": "In this prayer, you will ask for forgiveness for your sins and accept Him as your Savior sincerely in your heart. When praying, do not do anything else. Just focus and mean every word.",
-    "prayer.title": "A Simple Prayer of Faith",
-    "prayer.text": "<strong>Dear Lord Jesus,</strong> I know that I am a sinner and that I deserve the penalty of hell. But I believe that You died on the cross, were buried, and rose again for my sins. Please forgive me for all my sins. Right now I place my trust in You alone as my personal Savior. Thank You for saving my soul and giving me eternal life. Amen.",
-    "assurance.title": "Assurance of Salvation",
-    "assurance.text1": "Because you accepted Him, you are now a child of God.",
-    "assurance.text2": "You now have a relationship with Him.",
-    "assurance.text3": "If you leave this world, you will go to His home, which is heaven.",
-    "assurance.text4": "This means your salvation is secure. It cannot be taken away.",
-    "assurance.sinTitle": "WHAT IF I SIN AGAIN?",
-    "assurance.sinIllus": "Think about your relationship with your parents.\nWhen you make a mistake, does your relationship end? Are you no longer their child?\nOf course not. You are still their child. That relationship cannot be removed.\n\nIt is the same with God. Once you are His child, that relationship will not disappear.\nBut when we do something wrong, our parents discipline us so we will not continue in that mistake.\nIt is the same with God. He disciplines us because He loves us and wants us to do what is right.",
-    "assurance.sinText": "You are still going to heaven, but God will guide and correct you.",
-    "assurance.finalTitle": "FINAL MESSAGE",
-    "assurance.finalText": "Hopefully, you now clearly understand salvation.",
-    "assurance.finalText2": "Please share this with your family and friends so they can also know God’s love.",
-    "questions.title": "Common Questions",
-    "questions.q1.ask": "Is being a good person enough to be saved?",
-    "questions.q1.ans": "<div class=\"verse-card\" style=\"margin:0 0 0.5rem 0;\"><span class=\"verse-ref\">Ephesians 2:8-9 (KJV)</span> For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.</div> Salvation is a gift from God, not earned by good works.",
-    "questions.q2.ask": "Do I need to join a church to be saved?",
-    "questions.q2.ans": "<div class=\"verse-card\" style=\"margin:0 0 0.5rem 0;\"><span class=\"verse-ref\">Acts 4:12 (KJV)</span> Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.</div> Salvation is through Jesus alone, not church membership.",
-    "nextsteps.title": "What Should I Do Next?",
-    "nextsteps.text": "If you have trusted Christ as your Savior, here are some important next steps for your spiritual growth:",
-    "nextsteps.bullet1": "Read the Bible daily.",
-    "nextsteps.bullet2": "Pray regularly and talk to God.",
-    "nextsteps.bullet3": "Attend a Bible-believing church.",
-    "nextsteps.bullet4": "Follow the Lord in baptism.",
-    "nextsteps.bullet5": "Continue growing in your faith.",
-    "footer.text": "This website shares the Bible's message of salvation through Jesus Christ. All Scripture quotations are from the King James Version (KJV) of the Bible."
-  }
-};
-
-// DOM elements with data-i18n
-function applyLanguage(lang) {
-  const elements = document.querySelectorAll('[data-i18n]');
-  elements.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'BUTTON') {
-        el.value = translations[lang][key];
-      } else {
-        el.innerHTML = translations[lang][key];
-      }
-    }
-  });
+/* === Mobile-First Responsive CSS – optimized for Realme C25Y === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-// language selector
-const langSelector = document.getElementById('lang-selector');
-langSelector.addEventListener('change', (e) => {
-  applyLanguage(e.target.value);
-});
+body {
+  background-color: #FFFFFF;
+  font-family: 'Source Sans 3', 'Open Sans', sans-serif;
+  color: #1e2b37;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
 
-// mobile menu toggle
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobile-nav');
-hamburger.addEventListener('click', () => {
-  mobileNav.classList.toggle('show');
-});
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  color: #1e3a5f;
+  word-wrap: break-word;
+}
 
-// sidebar collapse on mobile
-const sidebarToggle = document.getElementById('sidebarToggle');
-const sidebarNav = document.getElementById('sidebarNav');
-sidebarToggle.addEventListener('click', () => {
-  sidebarNav.classList.toggle('collapsed');
-  const icon = sidebarToggle.querySelector('i');
-  if (sidebarNav.classList.contains('collapsed')) {
-    icon.classList.remove('fa-chevron-down');
-    icon.classList.add('fa-chevron-up');
-  } else {
-    icon.classList.remove('fa-chevron-up');
-    icon.classList.add('fa-chevron-down');
+/* header */
+.site-header {
+  background-color: #2F5D8C;
+  color: white;
+  padding: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 0.5rem;
+}
+
+.logo-area {
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.logo-area h1 {
+  font-size: 1.4rem;
+  color: white;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.verse-motto {
+  background: white;
+  border-radius: 40px;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #1e2b37;
+  margin-top: 0.3rem;
+  max-width: 100%;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.verse-motto .ref {
+  color: #C9A227;
+  font-weight: 700;
+}
+
+.nav-lang-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.desktop-nav {
+  display: none;
+  gap: 1rem;
+}
+
+.desktop-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.lang-selector {
+  background: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  color: #2F5D8C;
+  cursor: pointer;
+  font-size: 0.85rem;
+  height: 32px;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #1f4a6e;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+  border-radius: 16px;
+}
+.mobile-nav a {
+  color: white;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  border-bottom: 1px solid #3f6b91;
+  font-size: 0.95rem;
+}
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+.mobile-nav.show {
+  display: flex;
+}
+
+/* main layout */
+.main-grid {
+  max-width: 1400px;
+  margin: 1.5rem auto;
+  padding: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* sidebar */
+.sidebar {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  padding: 1rem 0.8rem;
+  border: 1px solid #eef4fa;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.sidebar-collapse-btn {
+  width: 100%;
+  background: #2F5D8C;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-nav.collapsed {
+  display: none;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #1e3a5f;
+  padding: 0.5rem 0.8rem;
+  border-radius: 40px;
+  transition: all 0.15s;
+  font-weight: 500;
+  background-color: #f5f9ff;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.sidebar-nav a.active {
+  background-color: #2F5D8C;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(47,93,140,0.3);
+}
+
+/* content cards */
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  border: 1px solid #eef4fa;
+  scroll-margin-top: 100px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.section-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-card h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #2F5D8C;
+}
+
+.section-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.verse-card {
+  background: #EEF4FA;
+  border-radius: 18px;
+  padding: 1.2rem;
+  margin: 1.2rem 0;
+  border-left: 6px solid #C9A227;
+  font-style: italic;
+  box-shadow: inset 0 -1px 0 #dbe5f0;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.verse-card .verse-ref {
+  font-weight: 700;
+  color: #C9A227;
+  font-style: normal;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.illustration {
+  background: #f9fcff;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px dashed #C9A22740;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+.reflection {
+  font-weight: 600;
+  color: #2F5D8C;
+  background: #EEF4FA;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background-color: #2F5D8C;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 60px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 8px rgba(47,93,140,0.25);
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+.btn:hover { background-color: #1f4370; }
+
+.decision-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+.decision-buttons .btn {
+  flex: 1 1 auto;
+  min-width: 100px;
+}
+
+/* accordion */
+.accordion-item {
+  background: white;
+  border-radius: 18px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #dde9f5;
+}
+.accordion-question {
+  background: #EEF4FA;
+  padding: 1rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  gap: 1rem;
+}
+.accordion-question span {
+  flex: 1;
+}
+.accordion-answer {
+  padding: 0 1.2rem 1.2rem 1.2rem;
+  display: none;
+  font-size: 0.95rem;
+}
+.accordion-answer.show {
+  display: block;
+}
+.accordion-question i { 
+  transition: transform 0.2s; 
+  color: #2F5D8C;
+  font-size: 1rem;
+}
+
+/* lists */
+ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* footer */
+.site-footer {
+  background-color: #2F5D8C;
+  color: white;
+  padding: 1.8rem 1rem;
+  margin-top: 2rem;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+}
+.footer-verse {
+  background: #FFFFFF20;
+  border-radius: 30px;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 6px solid #C9A227;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+.footer-verse .ref {
+  color: #C9A227;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* small screen fine-tuning */
+@media (max-width: 480px) {
+  .logo-area h1 {
+    font-size: 1.2rem;
   }
-});
+  .verse-motto {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.8rem;
+  }
+  .nav-lang-wrapper {
+    gap: 0.4rem;
+  }
+  .lang-selector {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .hamburger {
+    font-size: 1.6rem;
+  }
+  .section-card {
+    padding: 1.2rem 1rem;
+  }
+  .section-card h2 {
+    font-size: 1.3rem;
+  }
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .reflection {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  .sidebar-nav a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
 
-// active sidebar link on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.sidebar-nav a');
+/* tablet and up */
+@media (min-width: 768px) {
+  .desktop-nav { display: flex; }
+  .hamburger { display: none; }
+  .main-grid { flex-direction: row; }
+  .sidebar { 
+    width: 260px; 
+    position: sticky; 
+    top: 110px;
+    align-self: start;
+  }
+  .content { width: calc(100% - 280px); }
+  .sidebar-collapse-btn { display: none; }
+  .sidebar-nav { display: flex !important; }
+}
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 130;
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute('id');
-    }
-  });
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active');
-    }
-  });
-});
-
-// accordion functionality
-document.querySelectorAll('.accordion-question').forEach(question => {
-  question.addEventListener('click', () => {
-    const answer = question.nextElementSibling;
-    const icon = question.querySelector('i');
-    answer.classList.toggle('show');
-    icon.classList.toggle('fa-chevron-down');
-    icon.classList.toggle('fa-chevron-up');
-  });
-});
-
-// smooth scroll for "start guide" button
-document.getElementById('start-guide').addEventListener('click', () => {
-  document.getElementById('introduction').scrollIntoView({ behavior: 'smooth' });
-});
-
-// Yes/No buttons functionality
-document.getElementById('yesBtn').addEventListener('click', () => {
-  document.getElementById('prayer').scrollIntoView({ behavior: 'smooth' });
-});
-document.getElementById('noBtn').addEventListener('click', () => {
-  alert("That's okay. You can take your time to think about it. Feel free to read through the guide again anytime.");
-});
-
-// close mobile menu on link click
-document.querySelectorAll('.mobile-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileNav.classList.remove('show');
-  });
-});
-
-// initial language
-applyLanguage('en');
+/* extra large screens */
+@media (min-width: 1200px) {
+  .sidebar { width: 300px; }
+  .content { width: calc(100% - 330px); }
+  .section-card { padding: 2rem 2.2rem; }
+}
